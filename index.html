@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dufa Alwan – Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .fade-in {
+            animation: fadeIn 1.2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+    </style>
+</head>
+
+<body class="bg-gray-950 text-gray-100 font-sans">
+
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 w-full bg-gray-900/70 backdrop-blur-md z-50 shadow-lg">
+        <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold tracking-wide">DUFA</h1>
+            <div class="space-x-6 text-gray-300">
+                <a href="#about" class="hover:text-white">About</a>
+                <a href="#projects" class="hover:text-white">Projects</a>
+                <a href="#contact" class="hover:text-white">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="min-h-screen flex items-center justify-center text-center fade-in">
+        <div>
+            <h2 class="text-4xl md:text-6xl font-extrabold mb-4">Hi, I'm <span class="text-blue-400">Dufa Alwan</span></h2>
+            <p class="text-xl md:text-2xl text-gray-300 max-w-xl mx-auto">
+                Math • Data • Modeling • Simulation
+            </p>
+            <a href="#projects" class="mt-8 inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl text-lg transition-all">
+                View My Projects
+            </a>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-24 fade-in">
+        <div class="max-w-4xl mx-auto px-4">
+            <h3 class="text-3xl font-bold mb-6">About Me</h3>
+            <p class="text-gray-300 leading-relaxed">
+                Saya mahasiswa Matematika yang fokus pada pemodelan, simulasi, data analysis, dan pengembangan 
+                solusi komputasi. Berpengalaman membuat model PDE, epidemiologi, WLS, machine learning dasar, serta visualisasi data.
+            </p>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="py-24 fade-in bg-gray-900">
+        <div class="max-w-5xl mx-auto px-4">
+            <h3 class="text-3xl font-bold mb-10">Projects</h3>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <!-- CARD 1 -->
+                <div class="bg-gray-800 p-6 rounded-2xl shadow-xl hover:scale-[1.02] transition-all">
+                    <h4 class="text-xl font-semibold mb-3 text-blue-400">Simulasi Model Adveksi-Difusi Zooplankton</h4>
+                    <p class="text-gray-300 mb-4">
+                        Simulasi PDE berbasis metode numerik orde dua. Menggunakan Python + Numpy + Matplotlib.
+                    </p>
+                    <a class="text-blue-400 hover:underline" href="#" target="_blank">View</a>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="bg-gray-800 p-6 rounded-2xl shadow-xl hover:scale-[1.02] transition-all">
+                    <h4 class="text-xl font-semibold mb-3 text-blue-400">Weighted Least Squares (WLS)</h4>
+                    <p class="text-gray-300 mb-4">
+                        Implementasi WLS untuk kasus diskrit dan kontinu serta analisis error menggunakan Python.
+                    </p>
+                    <a class="text-blue-400 hover:underline" href="#" target="_blank">View</a>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="bg-gray-800 p-6 rounded-2xl shadow-xl hover:scale-[1.02] transition-all">
+                    <h4 class="text-xl font-semibold mb-3 text-blue-400">Klasifikasi Tingkat Kemiskinan Provinsi</h4>
+                    <p class="text-gray-300 mb-4">
+                        Machine learning: KNN, Random Forest, dan SVM dengan evaluasi akurasi per model.
+                    </p>
+                    <a class="text-blue-400 hover:underline" href="#" target="_blank">View</a>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="bg-gray-800 p-6 rounded-2xl shadow-xl hover:scale-[1.02] transition-all">
+                    <h4 class="text-xl font-semibold mb-3 text-blue-400">Pemodelan Epidemi SIR</h4>
+                    <p class="text-gray-300 mb-4">
+                        Estimasi parameter, fitting data historis 2019–2024, dan simulasi numerik dengan RK4.
+                    </p>
+                    <a class="text-blue-400 hover:underline" href="#" target="_blank">View</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-24 fade-in">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h3 class="text-3xl font-bold mb-6">Get In Touch</h3>
+            <p class="text-gray-300 mb-6">Email: <span class="text-blue-400">dufa@example.com</span></p>
+            <a href="mailto:dufa@example.com" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl transition-all">Send Email</a>
+        </div>
+    </section>
+
+    <footer class="py-8 text-center text-gray-500">
+        © 2025 Dufa Alwan
+    </footer>
+
+</body>
+</html>
